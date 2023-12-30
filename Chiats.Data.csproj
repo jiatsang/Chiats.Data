@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+  <TargetFrameworks>net6.0;net7.0;net472;net48</TargetFrameworks>
+  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  <Version>4.2.23.611</Version>
+    <Description>Chiats Common&amp;Sql&amp;Data Access Library</Description>
+    <Copyright>Copyright(C) 2005-2023 Chiats@Studio All rights reserved.</Copyright>
+          <AssemblyVersion></AssemblyVersion>
+          <FileVersion></FileVersion>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl>www.chiats.com</PackageProjectUrl>
+    <PackageId>Chiats.Data</PackageId>
+    <RootNamespace>Chiats.Data</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>chiats.common.snk</AssemblyOriginatorKeyFile>
+    <Product>Chiats Data Access Library</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net461'  or  '$(TargetFramework)' == 'net472' or  '$(TargetFramework)' == 'net48'">
+    <Reference Include="System.Transactions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />    
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chiats.Common\Chiats.Common.csproj" />
+  </ItemGroup>
+
+</Project>

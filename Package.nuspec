@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Ezslab.Data</id>
+    <version>3.2.0</version>
+    <authors>Joe Tsai</authors>
+    <owners>Joe Tsai</owners>
+    <licenseUrl>http://www.ezslab.com</licenseUrl>
+    <projectUrl>http://www.ezslab.com/Common</projectUrl>
+    <iconUrl>http://www.ezslab.com/ezslab.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Ezslab.Data Library</description>
+    <releaseNotes>Data Access Library</releaseNotes>
+    <copyright>Copyright 2010-2016</copyright>
+    <tags>DataAccess</tags>
+    <dependencies>
+      <dependency id="Ezslab.Common" version="3.2" />
+    </dependencies>
+  </metadata>
+</package>
